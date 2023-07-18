@@ -1,16 +1,28 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./wilp.css";
-import wilp from "./wilp.jpg";
+import wilp1 from "./wilp.jpg";
+import wilp2 from "./Wilp400.jpg";
 import { useHistory } from "react-router-dom";
 
 const WilpTest = () => {
   const history = useHistory();
   return (
     <>
-      <div style={{ display: "flex" }}>
+      <div
+        style={{
+          display: "flex",
+          border: "2px solid black"
+        }}
+      >
         <div>
-          <img src={wilp} style={{ width: "300px", height: "180px" }} />
+          <img
+            src={wilp2}
+            style={{
+              width: "200px",
+              height: "180px"
+            }}
+          />
         </div>
         <div
           style={{
@@ -36,7 +48,12 @@ const WilpTest = () => {
       >
         <div class="card">
           <div className="taco">TACO</div>
-          <div className="calculus">Calculus</div>
+          <div
+            className="calculus"
+            style={{ marginLeft: "auto", marginRight: "auto", width: "25%" }}
+          >
+            Calculus
+          </div>
           <div className="ec2">EC2</div>
           <div style={{ display: "flex" }}>
             <div className="time">IST 10:00am</div>
@@ -51,7 +68,12 @@ const WilpTest = () => {
           }}
         >
           <div className="taco">TACO</div>
-          <div className="calculus">Engineering Materials</div>
+          <div
+            className="calculus"
+            style={{ marginLeft: "20%", marginRight: "20%", width: "60%" }}
+          >
+            Engineering Materials
+          </div>
           <div className="ec2">EC2</div>
           <div style={{ display: "flex" }}>
             <div className="time">IST 10:00am</div>
@@ -60,7 +82,12 @@ const WilpTest = () => {
         </div>
         <div class="card">
           <div className="taco">TACO</div>
-          <div className="calculus">Elec. & Electronics Tech.</div>
+          <div
+            className="calculus"
+            style={{ marginLeft: "15%", marginRight: "15%", width: "70%" }}
+          >
+            Elec. & Electronics Tech.
+          </div>
           <div className="ec2">EC2</div>
           <div style={{ display: "flex" }}>
             <div className="time">IST 10:00am</div>
@@ -69,7 +96,12 @@ const WilpTest = () => {
         </div>
         <div class="card">
           <div className="taco">TACO</div>
-          <div className="calculus">Mechanics Of Solids</div>
+          <div
+            className="calculus"
+            style={{ marginLeft: "25%", marginRight: "5%", width: "70%" }}
+          >
+            Mechanics Of Solids
+          </div>
           <div className="ec2">EC2</div>
           <div style={{ display: "flex" }}>
             <div className="time">IST 10:00am</div>
